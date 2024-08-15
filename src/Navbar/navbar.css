@@ -1,137 +1,106 @@
-/* Navbar.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-
-    color: #000;
-} 
-
-.logo-img{
-    height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border: 1px solid rgb(201, 199, 199);
+  padding: 0px 20px 0px 20px;
+  position: relative;
 }
 
-
-
-.logo a {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
+.navbar-image img {
+  height: 50px;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+img {
+  cursor: pointer;
 }
 
-.nav-links li {
-    margin: 0 15px;
+.menu-icon img {
+  height: 30px;
 }
 
-.nav-links a {
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
+.menu-card {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 400px;
+  max-width: 60%;
+  background-color: #0095b8;
+  padding: 20px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+.menu-open-style {
+  transform: translateX(0);
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.menu-close-style {
+  transform: translateX(100%);
+}
+.menu-close {
+  padding-top: 5px;
+  padding-right: 5px;
 }
 
-.hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: #0095b8;
-    margin: 4px 0;
+.menu-close img {
+  height: 20px;
 }
 
-.close-icon {
-    font-size: 30px;
-    color: #0095b8;
-    z-index: 999;
+.menu-close {
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        /* margin-top: 49px; */
-        top: 0;
-        right: 0px; /* Initially hidden off-screen */
-        background-color:  #0095b8;
-        flex-direction: column;
-        width: 200px;
-        text-align: right;
-        padding: 10px 0;
-        height: 100vh;
-        transition: right 0.3s ease-in-out; /* Add transition */
-    } .nav-links {
-        display: none;
-        position: absolute;
-        /* margin-top: 49px; */
-        top: 0;
-        right: 0; /* Start at the right edge */
-        background-color:  #0095b8;
-        flex-direction: column;
-        width: 200px;
-        text-align: right;
-        padding: 10px 0;
-        height: 100vh;
-    }
-    
-    .nav-active {
-        display: flex;
-        animation: slideIn 0.3s forwards; /* Apply slide-in animation with 300ms duration */
-    }
-    
-    .nav-links.slide-out {
-        animation: slideOut 0.3s forwards; /* Apply slide-out animation with 300ms duration */
-    }
-    
-    /* Keyframes for sliding in */
-    @keyframes slideIn {
-        from {
-            right: -200px; 
-        }
-        to {
-            right: 0; 
-        }
-    }
-    
-    /* Keyframes for sliding out */
-    @keyframes slideOut {
-        from {
-            right: 0; /* Start at the right edge */
-        }
-        to {
-            right: -200px; /* Move off-screen */
-        }
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
+nav ul {
+  padding: 0px;
+  list-style-type: none;
 }
 
-.nav-active {
-    display: flex;
-    align-items: flex-start;
-    padding-left: 10px;
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 
+nav ul li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+nav ul li div img {
+  height: 20px;
+}
 
+nav ul li div p {
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
+
+nav ul li .sub-link-card {
+  padding: 0px 0px 0px 30px;
+}
+
+nav ul li .sub-link-card .sub-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  &:last-child {
+    border: none;
+  }
+}
+
+nav ul li .sub-link-card .sub-link img {
+  height: 20px;
+}
+
+nav ul li .sub-link-card .sub-link p {
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
