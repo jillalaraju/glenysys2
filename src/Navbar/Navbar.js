@@ -23,27 +23,27 @@ const menuItems = [
     subLinks: [
       {
         name: "IT Services",
-        path: "/case-study",
+        path: "/it-services",
       },
       {
         name: "Application Development",
-        path: "/career",
+        path: "/application-development",
       },
       {
         name: "Big Data Development",
-        path: "/contact-us",
+        path: "/big-data-development",
       },
       {
         name: "Staffing Services",
-        path: "/login",
+        path: "/staffing-services",
       },
       {
         name: "Salesforce Development",
-        path: "/career",
+        path: "/salesforce-development",
       },
       {
         name: "Talend Development",
-        path: "/contact-us",
+        path: "/talend-development",
       },
     ],
   },
@@ -71,9 +71,9 @@ const Navbar = () => {
   const handleMenu = () => {
     setIsMenu(!isMenu);
   };
-  const handleSubLinks=()=>{
-    setIsSubMenu(!isSubMenu)
-  }
+  const handleSubLinks = () => {
+    setIsSubMenu(!isSubMenu);
+  };
   return (
     <div className="navbar">
       <div
