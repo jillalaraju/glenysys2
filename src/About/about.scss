@@ -1,0 +1,126 @@
+.about-page {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 50px;
+  .main-img-container {
+    width: 100%;
+    .main-img {
+      width: 100%;
+    }
+  }
+  .digital-container {
+    display: flex;
+    width: 95%;
+    gap: 4%;
+    .side-img-container {
+      width: 48%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 5px;
+      .side-img {
+        width: 100%;
+      }
+    }
+    .side-text-container {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h3 {
+        font-size: 48px;
+        text-align: center;
+      }
+      p {
+        line-height: 26px;
+        font-size: 18px;
+      }
+      @media (max-width: "1150px") {
+        width: 100%;
+        align-items: center;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .img-text-main {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+    .img-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    // .img-text-container {
+    //   width: 30%;
+    // }
+  }
+  .img-text {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    // width: 30%;
+  }
+  .img-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    // width: 30%;
+    .text2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .core-section {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    .core-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        font-size: 35px;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    .text1 {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      gap: 10px;
+      P {
+        text-align: end;
+      }
+      h4 {
+        text-align: end;
+      }
+    }
+  }
+  P {
+    font-weight: 300;
+  }
+  h3,
+  h4 {
+    color: #0095b8;
+  }
+}

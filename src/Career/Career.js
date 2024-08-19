@@ -1,7 +1,13 @@
 import "./career.scss";
 
 const Career = () => {
-  return <div>Career</div>;
+  return (
+    <div>
+      <div>
+        <img />
+      </div>
+    </div>
+  );
 };
 
 export default Career;
