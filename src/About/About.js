@@ -10,7 +10,7 @@ import k6 from "./assets/k6.png";
 import pi from "./assets/pi.jpg";
 
 const About = () => {
-  const screenWidth = window.innerWidth;
+  // const screenWidth = window.innerWidth;
 
   return (
     <div className="about-page">
@@ -18,13 +18,16 @@ const About = () => {
         <img src={aboutImg} className="main-img" />
       </div>
       <div className="digital-container">
-        {screenWidth > 1150 ? (
+        {/* {screenWidth > 1150 ? (
           <div className="side-img-container">
             <img src={aboutImgs} className="side-img" />
           </div>
         ) : (
           " "
-        )}
+        )} */}
+        <div className="side-img-container">
+            <img src={aboutImgs} className="side-img" />
+          </div>
 
         <div className=" side-text-container">
           <h3>Digital Experience Design & Creative</h3>
