@@ -15,6 +15,7 @@ import SalesforceDevelopment from "./Services/subComponents/SalesforceDevelopmen
 import TalendDevelopment from "./Services/subComponents/TalendDevelopment/TalendDevelopment";
 
 import "./App.css";
+import Footer from "./footer/Footer";
 
 // Define an array of service routes
 const serviceRoutes = [
@@ -47,6 +48,7 @@ function App() {
           </Route>
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
