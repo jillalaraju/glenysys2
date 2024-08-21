@@ -163,7 +163,7 @@ nav ul li .sub-link-card .sub-link p {
           align-items: flex-start;
           justify-content: flex-start;
           position: absolute;
-          top: 45px;
+          top: 40px;
           width: 270px;
           right: 120px;
           padding: 20px 20px;
@@ -187,6 +187,9 @@ nav ul li .sub-link-card .sub-link p {
         }
       }
       li:hover .laptop-sub-menu {
+        display: flex;
+      }
+      .laptop-sub-menu:hover {
         display: flex;
       }
       span {
