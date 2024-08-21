@@ -1,0 +1,57 @@
+.top-nav {
+  background-color: #0095b8;
+  padding: 0px 20px 0px 20px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  @media (max-width: 800px) {
+    display: none;
+  }
+  .first-div {
+    display: flex;
+    gap: 15px;
+    div {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      span {
+        line-height: 0px;
+        font-size: 14px;
+      }
+      .icon-img {
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+  .second-div-card {
+    display: flex;
+    gap: 100px;
+    .second-div {
+      display: flex;
+      gap: 20px;
+      div {
+        .icon-img1 {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+    .login-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-size: 14px;
+        line-height: 0p;
+      }
+      .user {
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+}

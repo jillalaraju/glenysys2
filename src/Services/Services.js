@@ -1,7 +1,7 @@
 import "./services.scss";
 
 const Services = () => {
-  return <div>Services</div>;
+  return <div>Services1</div>;
 };
 
 export default Services;

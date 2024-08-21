@@ -15,21 +15,13 @@ import SalesforceDevelopment from "./Services/subComponents/SalesforceDevelopmen
 import TalendDevelopment from "./Services/subComponents/TalendDevelopment/TalendDevelopment";
 
 import "./App.css";
-
-// Define an array of service routes
-const serviceRoutes = [
-  { path: "it-services", component: ITServices },
-  { path: "application-development", component: ApplicationDevelopment },
-  { path: "big-data-development", component: BigDataDevelopment },
-  { path: "staffing-services", component: StaffingServices },
-  { path: "salesforce-development", component: SalesforceDevelopment },
-  { path: "talend-development", component: TalendDevelopment },
-];
+import TopNav from "./TopNav/TopNav";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ maxWidth: "1440px", margin: "auto" }}>
+        <TopNav />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -38,13 +30,28 @@ function App() {
           <Route path="/case-study" element={<CaseStudy />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
-
-          {/* Define the parent route for services */}
-          <Route path="/services" element={<Services />}>
-            {serviceRoutes.map(({ path, component: Component }) => (
-              <Route key={path} path={path} element={<Component />} />
-            ))}
-          </Route>
+          <Route path="/services/it-services" element={<ITServices />} />
+          <Route
+            path="/services/application-development"
+            element={<ApplicationDevelopment />}
+          />
+          <Route
+            path="/services/big-data-development"
+            element={<BigDataDevelopment />}
+          />
+          <Route
+            path="/services/staffing-services"
+            element={<StaffingServices />}
+          />
+          <Route
+            path="/services/salesforce-development"
+            element={<SalesforceDevelopment />}
+          />
+          <Route
+            path="/services/talend-development"
+            element={<TalendDevelopment />}
+          />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </div>
     </Router>
